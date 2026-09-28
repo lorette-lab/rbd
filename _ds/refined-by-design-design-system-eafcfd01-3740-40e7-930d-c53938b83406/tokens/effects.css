@@ -1,0 +1,25 @@
+/* Soft, low-contrast depth. Panels are grey fills with a hairline; shadows are
+   wide, faint and cool. Rounding is large but not pill on containers. */
+:root{
+  --radius-xs:6px; --radius-sm:10px; --radius-md:14px; --radius-lg:20px; --radius-xl:28px;
+  --radius-2xl:36px; --radius-pill:999px; --radius-circle:50%;
+
+  --border-hairline:1px solid var(--line-hairline);
+  --border-soft:1px solid var(--line-soft);
+  --border-strong:1px solid var(--line-strong);
+
+  --shadow-none:none;
+  --shadow-sm:0 1px 2px rgba(11,11,12,.05);
+  --shadow-md:0 10px 30px -18px rgba(11,11,12,.22);
+  --shadow-lift:0 26px 60px -30px rgba(11,11,12,.32);
+  --shadow-inset-hairline:inset 0 0 0 1px var(--line-hairline);
+  --shadow-focus:0 0 0 3px rgba(11,11,12,.14);
+
+  --blur-veil:blur(18px); /* @kind other */
+  --blur-glass:blur(22px); /* @kind other */
+  --scrim-bottom:linear-gradient(to top,rgba(11,11,12,.62),rgba(11,11,12,0)); /* @kind other */
+  --scrim-top:linear-gradient(to bottom,rgba(11,11,12,.45),rgba(11,11,12,0)); /* @kind other */
+
+  /* image placeholder — quiet grey wash, not a loud hatch */
+  --placeholder:linear-gradient(168deg,#EFEFF2 0%,#E3E4E8 100%); /* @kind other */
+}

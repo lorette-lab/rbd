@@ -1,0 +1,70 @@
+/* Cool neutral greyscale with pastel accents. Colour is a whisper here:
+   near-black type and buttons on soft grey panels, plus three tints for
+   highlight blocks. No saturated brand colour. */
+:root{
+  /* ink scale */
+  --ink-1:#0B0B0C; --ink-2:#1A1A1D; --ink-3:#55565B; --ink-4:#8A8B91; --ink-5:#B9BABF;
+  /* grey scale */
+  --white:#FFFFFF; --grey-1:#FBFBFC; --grey-2:#F7F7F8; --grey-3:#F0F0F2; --grey-4:#E6E6E9; --grey-5:#D5D6DA;
+  /* pastel accents */
+  --butter:#F6E7A8; --butter-deep:#E9D178;
+  --blush:#F3DCD4; --blush-deep:#E6C4B8;
+  --pink:#E9BDC9; --pink-deep:#D89FAF;
+
+  /* panel gradients — the reference's signature soft grey block */
+  --panel-soft:linear-gradient(168deg,#F5F5F7 0%,#EAEBEF 100%); /* @kind other */
+  --panel-dark:linear-gradient(168deg,#1A1A1D 0%,#0B0B0C 100%); /* @kind other */
+
+  /* semantic — surface */
+  --surface-page:var(--grey-2);
+  --surface-card:var(--white);
+  --surface-panel:var(--grey-3);
+  --surface-sunken:var(--grey-3);
+  --surface-quiet:var(--grey-4);
+  --surface-inverse:var(--ink-1);
+  --surface-accent:var(--ink-1);
+  --surface-highlight:var(--butter);
+
+  /* semantic — text */
+  --text-strong:var(--ink-1);
+  --text-body:var(--ink-3);
+  --text-muted:var(--ink-4);
+  --text-faint:var(--ink-5);
+  --text-inverse:var(--white);
+  --text-accent:var(--ink-4);
+  --text-link:var(--ink-1);
+  --text-link-hover:var(--ink-3);
+
+  /* semantic — line */
+  --line-hairline:rgba(11,11,12,.07);
+  --line-soft:rgba(11,11,12,.12);
+  --line-strong:rgba(11,11,12,.28);
+  --line-inverse:rgba(255,255,255,.14);
+
+  /* semantic — state */
+  --focus-ring:var(--ink-1);
+  --status-success:#3F7A5B;
+  --status-warning:#B08A2E;
+  --status-error:#B4463C;
+  --status-info:var(--ink-3);
+
+  /* glass — the dark floating card over imagery */
+  --glass-dark:rgba(20,20,23,.62); /* @kind other */
+  --glass-light:rgba(255,255,255,.68); /* @kind other */
+}
+/* Inverse scope: drop on any dark band. */
+.rbd-invert{
+  --surface-page:var(--ink-1);
+  --surface-card:rgba(255,255,255,.05);
+  --surface-panel:var(--ink-2);
+  --surface-sunken:var(--ink-2);
+  --text-strong:var(--white);
+  --text-body:var(--ink-5);
+  --text-muted:var(--ink-4);
+  --text-faint:var(--ink-3);
+  --text-link:var(--white);
+  --line-hairline:rgba(255,255,255,.09);
+  --line-soft:rgba(255,255,255,.16);
+  --line-strong:rgba(255,255,255,.32);
+  --focus-ring:var(--white);
+}

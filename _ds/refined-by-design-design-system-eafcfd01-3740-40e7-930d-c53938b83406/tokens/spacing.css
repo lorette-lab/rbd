@@ -1,0 +1,17 @@
+/* 4px base. Generous vertical rhythm; panels sit inside a 1200px container. */
+:root{
+  --space-0:0px; --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px;
+  --space-5:20px; --space-6:24px; --space-7:32px; --space-8:40px; --space-9:56px;
+  --space-10:72px; --space-11:96px; --space-12:128px; --space-13:170px;
+
+  --gutter:var(--space-6);
+  --page-pad-x:clamp(18px,4vw,56px);
+  --section-y:clamp(64px,8vw,140px); /* @kind spacing */
+  --stack-tight:var(--space-3);
+  --stack:var(--space-6);
+  --stack-loose:var(--space-9);
+
+  --container:1200px;
+  --container-prose:660px;
+  --grid-cols:12; /* @kind other */
+}
